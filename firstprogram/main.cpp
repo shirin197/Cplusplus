@@ -10,7 +10,7 @@ using namespace std; // declare to get access to the functionality
 
 class mysecondmain {
 public:
-    void mysecondMeth(){
+    void mysecondMethod(){
         cout <<"hello moritz zwei";
     }
 };
@@ -32,7 +32,7 @@ int main (){
     unsigned ii = 1;
     unsigned benutzer = 0;
 
-    cout <<"Bitte hebe ein Zahl ein" << endl;
+    cout <<"Bitte gebe ein Zahl ein" << endl;
     cin >> benutzer;
 
     do{
@@ -41,7 +41,7 @@ int main (){
     }while(ii <= benutzer);
 
     mysecondmain myObj;
-    myObj.mysecondMeth();
+    myObj.mysecondMethod();
 
     return 0;
 }
