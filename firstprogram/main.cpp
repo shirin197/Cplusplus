@@ -6,6 +6,8 @@
  */
 
 #include <iostream> // include the basic input | output libary
+#include <time.h>
+
 using namespace std; // declare to get access to the functionality
 
 class mysecondmain {

@@ -3,4 +3,6 @@ project(firstprogram)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(firstprogram main.cpp)
+# source weg anpassen zum bestimmte Datei laufen lassen
+# firstprogram main.cpp ... änderung
+add_executable(firstprogram src/random_number/random_number.cpp src/random_number/random_number.h)
