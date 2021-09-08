@@ -31,7 +31,20 @@ int main(){
     signed int MyAccountBalance = -1;        // signed   : both positive and negative values
 
     signed int results = NumberOfSisters + MyAccountBalance;
-    cout << results; // output : 4
+    cout << results << endl; // output : 4
+
+    short Year; // datatype is equal to datatype int
+    short int Year2;
+
+    // Initializaton of variables
+
+    int x = 5;          // value = 5
+    int z(2);           // value = 2
+    int results2;
+
+    x = x + 7;
+    results2 = x - z;
+    cout << results2; // output : 10
 
     return 0;
 
