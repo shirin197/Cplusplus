@@ -1,6 +1,7 @@
-//
-// Created by Nadina Amsler on 01.09.2021.
-//
+/*
+ * @author by Nadina Amsler (shirin197)
+ * @date 01.09.2021.
+ */
 
 #include "iostream"
 using namespace std;
