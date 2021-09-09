@@ -8,7 +8,7 @@
 using namespace std;
 
 int main (){
-    
+
     string mystring = "this is a string";
     string secondstring = ("this is also a string");
 
