@@ -1,7 +1,7 @@
-//
-// Created by Nadina Amsler on 09.09.2021.
-//
-
+/*
+ * @author by Nadina Amsler (shirin197)
+ * @date 09.09.2021.
+ */
 #include "assigmentoperator.h"
 #include "iostream"
 using namespace std;
