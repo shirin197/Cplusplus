@@ -8,6 +8,9 @@
  * at the moment, when you choose a method and then choose another the balance is the one from the start !!
  */
 #include "iostream"
+#include <stdio.h>
+#define RED     "\033[31m"      /* Red */
+#include <stdlib.h>
 
 using namespace std;
 
@@ -17,6 +20,7 @@ using namespace std;
 float am_m_01;
 float am_m_02;
 float accountbalance;
+
 
 // method exit to end the program
 void exit() {
@@ -30,8 +34,9 @@ void add() {
     cout << "---------\n";
     cout << "How much money do you wanna add: ";
     cin >> am_m_01;
-    int draw_acb01 = accountbalance + am_m_01;
-    cout << "Your new account balance is: " << draw_acb01 << ".Fr\n";
+    //    accountbalance = accountbalance + am_m_01;
+    accountbalance += am_m_01;
+    cout << "Your new account balance is: " << accountbalance << ".Fr\n";
 }
 
 // method to draw money from the current account balance
@@ -41,21 +46,23 @@ void draw() {
     cout << "How much money do you wanna draw: ";
     cin >> am_m_02;
 
-    int draw_acb = accountbalance - am_m_02;
+    accountbalance -= am_m_02;
 
-    if (draw_acb < 0) {
-        cout << "You dont have enough money!";
+    if (accountbalance < 0) {
+        system("Color 04"), cout << "You dont have enough money!\n"; /*set color form text red*/
+        system("Color 0");
+        accountbalance += am_m_02;
     } else {
-        cout << "Your new account balance is: " << draw_acb << ".Fr\n";
+        cout << "Your new account balance is: " << accountbalance << ".Fr\n";
     }
 
 }
 
+
 int main() {
     // variable for the input
     int input;
-
-    cout << "How much money do you have: ";
+    cout << (4, "How much money do you have: ");
     cin >> accountbalance;
     cout << "Your current account balance: " << accountbalance << ".Fr \n";
 
