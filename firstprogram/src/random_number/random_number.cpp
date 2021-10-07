@@ -30,5 +30,5 @@ int main(){
     }while (iSecret!=iGuess);
 
     puts("Gratuliere du hast die gesuchte Zahl gefunden");
-    return 0;
+    return -1;
 }

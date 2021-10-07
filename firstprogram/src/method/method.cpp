@@ -36,7 +36,7 @@ void add() {
     cin >> am_m_01;
     //    accountbalance = accountbalance + am_m_01;
     accountbalance += am_m_01;
-    cout << "Your new account balance is: " << accountbalance << ".Fr\n";
+    cout << "Your new account balance is: " << accountbalance << " Fr\n";
 }
 
 // method to draw money from the current account balance
@@ -45,15 +45,16 @@ void draw() {
     cout << "---------\n";
     cout << "How much money do you wanna draw: ";
     cin >> am_m_02;
+    system("Color 00");
 
     accountbalance -= am_m_02;
 
     if (accountbalance < 0) {
         system("Color 04"), cout << "You dont have enough money!\n"; /*set color form text red*/
-        system("Color 0");
         accountbalance += am_m_02;
+
     } else {
-        cout << "Your new account balance is: " << accountbalance << ".Fr\n";
+        cout << "Your new account balance is: " << accountbalance << " Fr\n";
     }
 
 }
@@ -64,7 +65,7 @@ int main() {
     int input;
     cout << (4, "How much money do you have: ");
     cin >> accountbalance;
-    cout << "Your current account balance: " << accountbalance << ".Fr \n";
+    cout << "Your current account balance: " << accountbalance << " Fr \n";
 
     // do while loop
     do {
